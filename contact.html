@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | IDM Metal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">IDM<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container page-padding">
+        <div class="contact-layout animate__animated animate__fadeIn">
+            <div class="contact-info">
+                <span class="tag">Get in touch</span>
+                <h2>Let's Build Your <br><span>Next Project</span></h2>
+                <div class="info-item">
+                    <p>Адрес производства:</p>
+                    <span>г. Москва, ул. Промышленная, 14</span>
+                </div>
+                <div class="info-item">
+                    <p>Почта для ТЗ:</p>
+                    <span>info@idm-metal.ru</span>
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="tg-form">
+                    <div class="input-row">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                        <input type="tel" id="phone" placeholder="Телефон" required>
+                    </div>
+                    <textarea id="message" rows="6" placeholder="Описание проекта (материал, толщина, количество)..."></textarea>
+                    <button type="submit" class="btn-main full-width">Отправить расчет</button>
+                    <div id="status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
